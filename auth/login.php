@@ -3,13 +3,11 @@
 <div class="card">
   <div class="card-body">
     <!-- Logo -->
-    <div class="app-brand justify-content-center">
-      <h1>
-        <img src="assets\img\illustrations\logo-color.jpg">
-      </h1>
-      </div>
+    <div>
+      <img class="card-img-top" src="https://i.imgur.com/WPGTieV.png" alt="Kamu sedang offline...">
+    </div>
     <!-- /Logo -->
-    <h4 class="mb-2">Selamat datang di Gus-Express</h4>
+    
     <form class="mb-3" action="login_auth.php" method="POST">
       <div class="mb-3">
         <label class="form-label">Username</label>
@@ -28,7 +26,7 @@
         </div>
       </div>
       <div class="mb-3">
-        <button class="btn btn-primary d-grid w-100" type="submit">Masuk</button>
+        <button class="btn btn-dark d-grid w-100" type="submit">Masuk</button>
       </div>
     </form>
     <p class="text-center">
