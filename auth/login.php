@@ -4,10 +4,10 @@
   <div class="card-body">
     <!-- Logo -->
     <div class="app-brand justify-content-center">
-      <a href="index.html" class="app-brand-link gap-2">
-        <span class="app-brand-text demo text-uppercase fw-bolder">Gus-Ex</span>
-      </a>
-    </div>
+      <h1>
+        <img src="assets\img\illustrations\logo-color.jpg">
+      </h1>
+      </div>
     <!-- /Logo -->
     <h4 class="mb-2">Selamat datang di Gus-Express</h4>
     <form class="mb-3" action="login_auth.php" method="POST">
