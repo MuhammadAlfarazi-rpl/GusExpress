@@ -4,11 +4,12 @@ require_once("../config.php");
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["nama"];
+    $username = $_POST["username"];
+    $name = $_POST["nama"];
     $password = $_POST["password"];
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO pelanggan (nama, password) VALUES ('$username', '$hashedPassword')";
+    $sql = "INSERT INTO pelanggan (username, nama, password) VALUES ('$username', '$name', '$hashedPassword')";
 
     if($conn->query($sql) === TRUE) {
         $_SESSION["notification"] = [
