@@ -3,10 +3,10 @@ session_start();
 require_once("../config.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
+    $username = $_POST["nama"];
     $password = $_POST["password"];
 
-    $sql = "SELECT * FROM auth WHERE username = '$username'";
+    $sql = "SELECT * FROM pelanggan WHERE nama = '$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
