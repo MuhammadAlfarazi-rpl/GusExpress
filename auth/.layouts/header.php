@@ -26,6 +26,6 @@
   <body>
     <!-- Content -->
     <?php include '../.includes/toast_notification.php'; ?>
-    <div class="container-xxl" style="background-color: #303030">
+    <div class="container-xxl" style="background-color: #f2fdff">
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner">

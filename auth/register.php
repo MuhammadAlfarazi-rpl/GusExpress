@@ -4,7 +4,7 @@
   <div class="card-body">
     <!-- Logo -->
     <div>
-      <img class="card-img-top" src="../assets/img/illustrations/gus-ex-logo.png" alt="Kamu sedang offline...">
+      <img class="card-img-top" src="../assets/img/illustrations/gus-ex-logo-new.png" alt="Kamu sedang offline...">
     </div>
     <!-- /Logo -->
     <form action="register_process.php" class="mb-3" method="POST">
