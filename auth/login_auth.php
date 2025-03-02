@@ -3,19 +3,19 @@ session_start();
 require_once("../config.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["nama"];
+    $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $sql = "SELECT * FROM pelanggan WHERE nama = '$username'";
+    $sql = "SELECT * FROM pelanggan WHERE username = '$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
         if (password_verify($password, $row["password"])) {
-           $_SESSION["username"] = $username;
-           $_SESSION["role"] = $row["role"];
-           $_SESSION["user_id"] = $row["user_id"];
+            $_SESSION["username"] = $username;
+            $_SESSION["nama"] = $name;
+            $_SESSION["pelanggan_id"] = $row["pelanggan_id"];
 
             $_SESSION['notification'] = [
                'type' => 'primary',
