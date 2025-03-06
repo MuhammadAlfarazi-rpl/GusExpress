@@ -44,5 +44,11 @@
     <script src="assets/vendor/libs/summernote/summernote.js" defer></script>
     <!-- Active State JS -->
     <script src="assets/js/active-state-nav.js"></script>
+    <!-- Additional JS by User Riis -->
+    <script>
+    function setSatuan(satuan) {
+        document.getElementById("satuanButton").innerText = satuan;
+    }
+    </script>
 </body>
 </html>
